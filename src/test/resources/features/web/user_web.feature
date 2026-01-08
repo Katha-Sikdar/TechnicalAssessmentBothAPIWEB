@@ -1,20 +1,17 @@
 Feature: User WEB Validation
+
   @web
-  Scenario Outline: Verify URL Navigation to User Page
+  Scenario Outline: Verify fields for firststrip.com web application
     Given Navigate to the base URI is "<TestCase>"
-#    Then Click on the Username Field
-#    When I send a GET request to "<TestCase>"
-#    Then the response status code should be 200
+    Then Click One way radio button
+    Then Click Departure Date Field and date as tomorrow
+    Then Click search button
+    And Assert The Search Results Page is displayed
+    Then In the search results:Select the first flight
+    And Verify that the Sign In page appears.
+   #Then Close the Sign In modal/browser window.
+    And Capture the price of the currently listed flights into an array.
 
     Examples:
-      |TestCase|
-      |  WEB_TC01    |
-#  @api
-#  Scenario Outline: Verify user can be created via POST API
-#    Given the API base URI is "<TestCase>"
-#    When I send a POST request to "<TestCase>"
-#    Then the response status code should be 201
-#
-#    Examples:
-#      | TestCase |
-#      | WEB_TC04 |
+      | TestCase |
+      | WEB_TC01 |

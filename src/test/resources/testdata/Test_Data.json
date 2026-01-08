@@ -1,23 +1,14 @@
 {
     "API_TC01": {
-        "url": "https://jsonplaceholder.typicode.com",
-        "endpoint": "/users/1",
-        "expectedName": "Leanne Graham"
+        "url": "https://firsttrip.com/flight",
+        "endpoint": "/flight",
+        "expectedpageTitle": "Air Ticket Price & Cheap Flights in Bangladesh | Flight Booking"
     },
 
-    "API_TC02": {
-        "url": "https://jsonplaceholder.typicode.com",
-        "endpoint": "/posts",
-        "requestBody": {
-            "title": "Introduction to API",
-            "body": "This is a test body",
-            "userId": 1
-        }
-    },
 
     "WEB_TC01": {
-        "url": "https://www.google.com",
-        "pageTitle": "Google"
+        "url": " https://firsttrip.com/flight",
+        "pageTitle": "Air Ticket Price & Cheap Flights in Bangladesh | Flight Booking"
     }
 }
 
